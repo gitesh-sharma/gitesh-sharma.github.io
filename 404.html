@@ -10,6 +10,8 @@
   <style>
 :root{
   --gradient: linear-gradient(135deg,#020617,#f28c28);
+  --primary:#1aa84b;
+  --primary-dark:#1e40af;
 }
     * {
       margin: 0;
@@ -116,10 +118,15 @@ h1 {
       transition: 0.3s;
     }
 
-    a.home-btn:hover {
+    /*a.home-btn:hover {
       background: #CC5500;
-    }
+    }*/
 
+    a.home-btn:hover {
+      background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+      transform:translateY(-2px);
+      box-shadow:0 8px 20px rgba(37,99,235,.35);
+    }
     footer {
       margin-top: 40px;
       font-size: 14px;
