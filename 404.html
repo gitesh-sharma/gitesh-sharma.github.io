@@ -8,6 +8,9 @@
   <title>404 - Sharmaji Technology Media</title>
 
   <style>
+:root{
+  --gradient: linear-gradient(135deg,#020617,#f28c28);
+}
     * {
       margin: 0;
       padding: 0;
@@ -42,11 +45,21 @@
       margin-bottom: 15px;
     }
 
-    h1 {
+    
+/* NAME WITH GRADIENT TEXT */
+h1 {
+  font-size:22px;
+  font-weight:700;
+  background:var(--gradient);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+    
+    /*h1 {
       font-size: 15px;
       font-weight: 700;
       color: linear-gradient(135deg,#020617,#f28c28);
-    }
+    }*/
     
     h2 {
       font-size: 45px;
@@ -145,7 +158,7 @@
     <!-- Logo -->
     <img src="/en/images/favicon.png" class="logo" alt="Sharmaji Technology Media Logo">
 
-    <h1>Sharmaji Technology Media</h1>
+    <h1>Sharmaji Technology Media</h1><br>
     <h2>404</h2>
     <p>The page you are looking for is not available.</p>
 
